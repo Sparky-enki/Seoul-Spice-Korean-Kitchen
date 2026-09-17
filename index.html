@@ -4,491 +4,339 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Seoul Spice Korean Kitchen 🇰🇷</title>
-
-<meta name="description"
-content="Seoul Spice Korean Kitchen - delicious Korean food, fresh ingredients and easy online ordering.">
+<title>Seoul Bites | Korean Restaurant</title>
 
 <style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,Helvetica,sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    background:#fff8f3;
-    color:#222;
+body {
+    background: #fff8f2;
+    color: #222;
 }
 
 /* HEADER */
-
-header{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    background:#111;
-    color:white;
-    padding:15px 6%;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    box-shadow:0 3px 15px rgba(0,0,0,.25);
+header {
+    background: #171717;
+    color: white;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.logo{
-    font-size:24px;
-    font-weight:bold;
+.logo {
+    font-size: 25px;
+    font-weight: bold;
 }
 
-.logo span{
-    color:#ff405f;
+.logo span {
+    color: #ff4d6d;
 }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 12px;
-    font-size:15px;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 15px;
 }
 
-nav a:hover{
-    color:#ff405f;
-}
-
-.cart-btn{
-    background:#ff405f;
-    color:white;
-    border:0;
-    padding:11px 17px;
-    border-radius:25px;
-    cursor:pointer;
-    font-weight:bold;
+.cart-button {
+    background: #ff4d6d;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 /* HERO */
-
-.hero{
-    min-height:500px;
-    display:flex;
-    align-items:center;
-    padding:60px 8%;
-    color:white;
-
+.hero {
+    min-height: 430px;
+    display: flex;
+    align-items: center;
+    padding: 50px 8%;
     background:
-    linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60)),
-    url("https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=1800&q=80")
+    linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=1600&q=80")
     center/cover;
+    color: white;
 }
 
-.hero-content{
-    max-width:700px;
+.hero-content {
+    max-width: 650px;
 }
 
-.hero h1{
-    font-size:58px;
-    line-height:1.1;
-    margin-bottom:20px;
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
 }
 
-.hero h1 span{
-    color:#ff405f;
+.hero p {
+    font-size: 19px;
+    margin-bottom: 25px;
 }
 
-.hero p{
-    font-size:20px;
-    line-height:1.6;
-    margin-bottom:28px;
-}
-
-.hero-btn{
-    display:inline-block;
-    background:#ff405f;
-    color:white;
-    text-decoration:none;
-    padding:15px 27px;
-    border-radius:30px;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.hero-btn:hover{
-    transform:scale(1.05);
+.hero button {
+    padding: 14px 25px;
+    border: none;
+    background: #ff4d6d;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 /* SEARCH */
-
-.search-area{
-    text-align:center;
-    padding:35px 6% 15px;
+.search-section {
+    padding: 30px 8% 10px;
+    text-align: center;
 }
 
-.search-area h2{
-    margin-bottom:18px;
+.search-box {
+    width: 90%;
+    max-width: 600px;
+    padding: 15px 20px;
+    border: 2px solid #eee;
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
 }
 
-.search-box{
-    width:90%;
-    max-width:650px;
-    padding:16px 22px;
-    border:2px solid #eee;
-    border-radius:30px;
-    outline:none;
-    font-size:16px;
-    background:white;
+/* CATEGORY */
+.categories {
+    padding: 25px 8%;
+    text-align: center;
 }
 
-.search-box:focus{
-    border-color:#ff405f;
+.categories button {
+    border: none;
+    background: white;
+    padding: 10px 18px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
 }
 
-/* CATEGORIES */
-
-.categories{
-    text-align:center;
-    padding:20px 6%;
-}
-
-.category-btn{
-    border:0;
-    background:white;
-    padding:10px 18px;
-    margin:5px;
-    border-radius:25px;
-    cursor:pointer;
-    box-shadow:0 3px 10px rgba(0,0,0,.08);
-}
-
-.category-btn:hover{
-    background:#ff405f;
-    color:white;
+.categories button:hover {
+    background: #ff4d6d;
+    color: white;
 }
 
 /* MENU */
-
-.menu{
-    padding:35px 6% 80px;
+.menu {
+    padding: 20px 8% 70px;
 }
 
-.menu-title{
-    text-align:center;
-    font-size:38px;
-    margin-bottom:35px;
+.menu h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
 }
 
-.food-grid{
-    display:grid;
-    grid-template-columns:
-    repeat(auto-fit,minmax(245px,1fr));
-    gap:25px;
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
 }
 
-.food-card{
-    background:white;
-    border-radius:18px;
-    overflow:hidden;
-    box-shadow:0 5px 20px rgba(0,0,0,.10);
-    transition:.3s;
+.food-card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,.1);
+    transition: .3s;
 }
 
-.food-card:hover{
-    transform:translateY(-7px);
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
+.food-card:hover {
+    transform: translateY(-5px);
 }
 
-.food-card img{
-    width:100%;
-    height:200px;
-    object-fit:cover;
+.food-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
 }
 
-.food-info{
-    padding:18px;
+.food-info {
+    padding: 18px;
 }
 
-.food-info h3{
-    font-size:21px;
-    margin-bottom:8px;
+.food-info h3 {
+    margin-bottom: 8px;
 }
 
-.food-info p{
-    color:#666;
-    line-height:1.5;
-    font-size:14px;
-    min-height:45px;
+.food-info p {
+    color: #666;
+    font-size: 14px;
+    min-height: 40px;
 }
 
-.price{
-    color:#ff405f;
-    font-size:21px;
-    font-weight:bold;
-    margin:14px 0;
+.price {
+    color: #ff4d6d;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 12px 0;
 }
 
-.add-btn{
-    width:100%;
-    border:0;
-    background:#111;
-    color:white;
-    padding:12px;
-    border-radius:9px;
-    cursor:pointer;
-    font-weight:bold;
+.add-btn {
+    width: 100%;
+    padding: 11px;
+    background: #171717;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
-.add-btn:hover{
-    background:#ff405f;
-}
-
-/* NO RESULTS */
-
-.no-results{
-    display:none;
-    text-align:center;
-    padding:30px;
-    font-size:18px;
-    color:#777;
+.add-btn:hover {
+    background: #ff4d6d;
 }
 
 /* CART */
-
-.cart{
-    position:fixed;
-    top:0;
-    right:-430px;
-    width:400px;
-    max-width:92%;
-    height:100vh;
-    background:white;
-    z-index:3000;
-    padding:25px;
-    box-shadow:-5px 0 25px rgba(0,0,0,.25);
-    transition:.4s;
-    overflow-y:auto;
+.cart {
+    position: fixed;
+    right: -420px;
+    top: 0;
+    width: 380px;
+    max-width: 90%;
+    height: 100%;
+    background: white;
+    z-index: 2000;
+    padding: 25px;
+    box-shadow: -5px 0 20px rgba(0,0,0,.2);
+    transition: .4s;
+    overflow-y: auto;
 }
 
-.cart.active{
-    right:0;
+.cart.active {
+    right: 0;
 }
 
-.cart-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-bottom:25px;
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
 }
 
-.close-cart{
-    border:0;
-    background:none;
-    font-size:30px;
-    cursor:pointer;
+.close-cart {
+    background: none;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
 }
 
-.cart-item{
-    padding:15px 0;
-    border-bottom:1px solid #eee;
+.cart-item {
+    border-bottom: 1px solid #eee;
+    padding: 12px 0;
 }
 
-.cart-item-name{
-    font-weight:bold;
-    margin-bottom:7px;
+.cart-item strong {
+    display: block;
 }
 
-.quantity{
-    margin-top:8px;
+.qty button {
+    padding: 3px 8px;
+    margin: 5px;
+    cursor: pointer;
 }
 
-.quantity button{
-    border:0;
-    background:#eee;
-    padding:5px 10px;
-    margin:0 4px;
-    border-radius:5px;
-    cursor:pointer;
+.total {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 25px 0;
 }
 
-.remove{
-    background:#ff405f !important;
-    color:white;
-}
-
-.cart-total{
-    font-size:23px;
-    font-weight:bold;
-    margin:25px 0;
-}
-
-.checkout-btn{
-    width:100%;
-    background:#ff405f;
-    color:white;
-    border:0;
-    padding:15px;
-    border-radius:10px;
-    cursor:pointer;
-    font-size:16px;
-    font-weight:bold;
+.checkout-btn {
+    width: 100%;
+    padding: 14px;
+    background: #ff4d6d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 /* CHECKOUT */
-
-.checkout{
-    display:none;
-    padding:60px 6%;
-    background:white;
+.checkout {
+    display: none;
+    padding: 50px 8%;
+    background: #fff;
 }
 
-.checkout.active{
-    display:block;
+.checkout.active {
+    display: block;
 }
 
-.checkout-box{
-    max-width:650px;
-    margin:auto;
+.checkout form {
+    max-width: 600px;
+    margin: auto;
 }
 
-.checkout-box h2{
-    text-align:center;
-    font-size:34px;
-    margin-bottom:25px;
+.checkout h2 {
+    text-align: center;
+    margin-bottom: 25px;
 }
 
-.checkout-box label{
-    display:block;
-    margin-top:13px;
-    font-weight:bold;
+.checkout input,
+.checkout textarea,
+.checkout select {
+    width: 100%;
+    padding: 13px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 7px;
 }
 
-.checkout-box input,
-.checkout-box textarea,
-.checkout-box select{
-    width:100%;
-    padding:14px;
-    margin-top:6px;
-    border:1px solid #ddd;
-    border-radius:8px;
-    outline:none;
-}
-
-.checkout-box textarea{
-    resize:vertical;
-}
-
-.place-order{
-    width:100%;
-    margin-top:20px;
-    padding:15px;
-    border:0;
-    border-radius:10px;
-    background:#25D366;
-    color:white;
-    font-size:17px;
-    font-weight:bold;
-    cursor:pointer;
-}
-
-.place-order:hover{
-    background:#1db954;
-}
-
-/* ABOUT */
-
-.about{
-    padding:70px 8%;
-    text-align:center;
-    background:#fff0e8;
-}
-
-.about h2{
-    font-size:35px;
-    margin-bottom:18px;
-}
-
-.about p{
-    max-width:750px;
-    margin:auto;
-    line-height:1.7;
-    color:#555;
+.place-order {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    background: #171717;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 /* FOOTER */
-
-footer{
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:35px 15px;
+footer {
+    background: #171717;
+    color: white;
+    text-align: center;
+    padding: 30px;
 }
 
-footer h3{
-    font-size:25px;
-    margin-bottom:10px;
+@media(max-width:600px) {
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    .cart {
+        width: 350px;
+    }
 }
-
-footer p{
-    color:#bbb;
-    margin:6px;
-}
-
-/* MOBILE */
-
-@media(max-width:700px){
-
-    header{
-        padding:13px 4%;
-    }
-
-    .logo{
-        font-size:18px;
-    }
-
-    nav{
-        display:none;
-    }
-
-    .hero{
-        min-height:450px;
-        padding:45px 7%;
-    }
-
-    .hero h1{
-        font-size:40px;
-    }
-
-    .hero p{
-        font-size:16px;
-    }
-
-    .menu-title{
-        font-size:30px;
-    }
-
-    .cart{
-        width:360px;
-    }
-
-}
-
 </style>
 </head>
 
-
 <body>
-
-
-<!-- HEADER -->
 
 <header>
 
     <div class="logo">
-        Seoul <span>Spice</span> 🇰🇷
+        Seoul <span>Bites</span> 🇰🇷
     </div>
 
     <nav>
@@ -497,124 +345,83 @@ footer p{
         <a href="#about">About</a>
     </nav>
 
-    <button class="cart-btn" onclick="openCart()">
-        🛒 Cart
-        (<span id="cartCount">0</span>)
+    <button class="cart-button" onclick="openCart()">
+        🛒 Cart (<span id="cartCount">0</span>)
     </button>
 
 </header>
 
 
-<!-- HERO -->
-
 <section class="hero" id="home">
 
     <div class="hero-content">
 
-        <h1>
-            Authentic <span>Korean</span> Flavours 🇰🇷
-        </h1>
+        <h1>Taste Korea 🇰🇷</h1>
 
         <p>
-            Welcome to Seoul Spice Korean Kitchen.
-            Discover delicious Korean dishes prepared
-            with fresh ingredients and bold flavours.
+            Authentic Korean flavors, delicious dishes,
+            and unforgettable meals delivered to your table.
         </p>
 
-        <a href="#menu" class="hero-btn">
-            🍜 Explore Our Menu
-        </a>
+        <button onclick="document.getElementById('menu').scrollIntoView()">
+            Explore Menu
+        </button>
 
     </div>
 
 </section>
 
 
-<!-- SEARCH -->
-
-<section class="search-area">
-
-    <h2>🔎 Find Your Favourite Dish</h2>
+<section class="search-section">
 
     <input
         type="text"
         id="search"
         class="search-box"
-        placeholder="Search Tteokbokki, Bibimbap, Chicken..."
+        placeholder="🔎 Search for Korean dishes..."
         onkeyup="searchFood()"
     >
 
 </section>
 
 
-<!-- CATEGORIES -->
-
 <section class="categories">
 
-    <button class="category-btn"
-        onclick="filterFood('all')">
-        All
-    </button>
-
-    <button class="category-btn"
-        onclick="filterFood('rice')">
-        🍚 Rice
-    </button>
-
-    <button class="category-btn"
-        onclick="filterFood('noodles')">
-        🍜 Noodles
-    </button>
-
-    <button class="category-btn"
-        onclick="filterFood('chicken')">
-        🍗 Chicken
-    </button>
-
-    <button class="category-btn"
-        onclick="filterFood('snacks')">
-        🥢 Snacks
-    </button>
-
-    <button class="category-btn"
-        onclick="filterFood('drinks')">
-        🥤 Drinks
-    </button>
+    <button onclick="filterFood('all')">All</button>
+    <button onclick="filterFood('rice')">Rice</button>
+    <button onclick="filterFood('noodles')">Noodles</button>
+    <button onclick="filterFood('chicken')">Chicken</button>
+    <button onclick="filterFood('snacks')">Snacks</button>
+    <button onclick="filterFood('drinks')">Drinks</button>
 
 </section>
 
 
-<!-- MENU -->
-
 <section class="menu" id="menu">
 
-    <h2 class="menu-title">
-        🍜 Our Korean Menu
-    </h2>
+    <h2>🍜 Korean Menu</h2>
 
     <div class="food-grid" id="foodGrid">
 
 
-        <!-- 1 -->
-
+        <!-- TTEOKBOKKI -->
         <div class="food-card" data-category="snacks">
 
-            <img src="https://images.unsplash.com/photo-1635363638580-c2809d049eee?auto=format&fit=crop&w=800&q=80"
-            alt="Tteokbokki">
+            <img src="https://images.unsplash.com/photo-1635363638580-c2809d049eee?auto=format&fit=crop&w=800&q=80">
 
             <div class="food-info">
 
                 <h3>Tteokbokki</h3>
 
                 <p>
-                    Soft Korean rice cakes in a
-                    sweet and spicy sauce.
+                    Spicy Korean rice cakes cooked
+                    in a sweet and spicy sauce.
                 </p>
 
                 <div class="price">₹199</div>
 
                 <button class="add-btn"
-                    onclick="addToCart('Tteokbokki',199)">
+                onclick="addToCart('Tteokbokki',199)">
                     Add to Cart
                 </button>
 
@@ -623,12 +430,10 @@ footer p{
         </div>
 
 
-        <!-- 2 -->
-
+        <!-- BIBIMBAP -->
         <div class="food-card" data-category="rice">
 
-            <img src="https://images.unsplash.com/photo-1553163147-622ab57be1c7?auto=format&fit=crop&w=800&q=80"
-            alt="Bibimbap">
+            <img src="https://images.unsplash.com/photo-1553163147-622ab57be1c7?auto=format&fit=crop&w=800&q=80">
 
             <div class="food-info">
 
@@ -636,13 +441,13 @@ footer p{
 
                 <p>
                     Korean rice bowl with vegetables,
-                    egg and savoury sauce.
+                    egg and delicious sauce.
                 </p>
 
                 <div class="price">₹299</div>
 
                 <button class="add-btn"
-                    onclick="addToCart('Bibimbap',299)">
+                onclick="addToCart('Bibimbap',299)">
                     Add to Cart
                 </button>
 
@@ -651,26 +456,76 @@ footer p{
         </div>
 
 
-        <!-- 3 -->
+        <!-- KIMCHI -->
+        <div class="food-card" data-category="snacks">
 
+            <img src="https://images.unsplash.com/photo-1583224994292-1e3b6d7c5a42?auto=format&fit=crop&w=800&q=80">
+
+            <div class="food-info">
+
+                <h3>Kimchi</h3>
+
+                <p>
+                    Traditional Korean fermented
+                    vegetables with spicy seasoning.
+                </p>
+
+                <div class="price">₹149</div>
+
+                <button class="add-btn"
+                onclick="addToCart('Kimchi',149)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- KIMCHI FRIED RICE -->
+        <div class="food-card" data-category="rice">
+
+            <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80">
+
+            <div class="food-info">
+
+                <h3>Kimchi Fried Rice</h3>
+
+                <p>
+                    Fried rice cooked with kimchi,
+                    vegetables and Korean seasoning.
+                </p>
+
+                <div class="price">₹249</div>
+
+                <button class="add-btn"
+                onclick="addToCart('Kimchi Fried Rice',249)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- KOREAN FRIED CHICKEN -->
         <div class="food-card" data-category="chicken">
 
-            <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb92?auto=format&fit=crop&w=800&q=80"
-            alt="Korean Fried Chicken">
+            <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb92?auto=format&fit=crop&w=800&q=80">
 
             <div class="food-info">
 
                 <h3>Korean Fried Chicken</h3>
 
                 <p>
-                    Crispy chicken with a delicious
-                    Korean-style glaze.
+                    Crispy fried chicken coated
+                    with Korean-style sauce.
                 </p>
 
                 <div class="price">₹349</div>
 
                 <button class="add-btn"
-                    onclick="addToCart('Korean Fried Chicken',349)">
+                onclick="addToCart('Korean Fried Chicken',349)">
                     Add to Cart
                 </button>
 
@@ -679,26 +534,24 @@ footer p{
         </div>
 
 
-        <!-- 4 -->
-
+        <!-- RAMYEON -->
         <div class="food-card" data-category="noodles">
 
-            <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80"
-            alt="Korean Ramyeon">
+            <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80">
 
             <div class="food-info">
 
                 <h3>Korean Ramyeon</h3>
 
                 <p>
-                    Hot, comforting Korean noodles
-                    with rich flavour.
+                    Hot and flavorful Korean-style
+                    noodle soup.
                 </p>
 
                 <div class="price">₹229</div>
 
                 <button class="add-btn"
-                    onclick="addToCart('Korean Ramyeon',229)">
+                onclick="addToCart('Korean Ramyeon',229)">
                     Add to Cart
                 </button>
 
@@ -707,12 +560,10 @@ footer p{
         </div>
 
 
-        <!-- 5 -->
-
+        <!-- JAPCHAE -->
         <div class="food-card" data-category="noodles">
 
-            <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80"
-            alt="Japchae">
+            <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80">
 
             <div class="food-info">
 
@@ -726,7 +577,7 @@ footer p{
                 <div class="price">₹279</div>
 
                 <button class="add-btn"
-                    onclick="addToCart('Japchae',279)">
+                onclick="addToCart('Japchae',279)">
                     Add to Cart
                 </button>
 
@@ -735,194 +586,24 @@ footer p{
         </div>
 
 
-        <!-- 6 -->
-
-        <div class="food-card" data-category="rice">
-
-            <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80"
-            alt="Kimchi Fried Rice">
-
-            <div class="food-info">
-
-                <h3>Kimchi Fried Rice</h3>
-
-                <p>
-                    Fried rice with kimchi,
-                    vegetables and Korean seasoning.
-                </p>
-
-                <div class="price">₹249</div>
-
-                <button class="add-btn"
-                    onclick="addToCart('Kimchi Fried Rice',249)">
-                    Add to Cart
-                </button>
-
-            </div>
-
-        </div>
-
-
-        <!-- 7 -->
-
-        <div class="food-card" data-category="snacks">
-
-            <img src="https://images.unsplash.com/photo-1583224994292-1e3b6d7c5a42?auto=format&fit=crop&w=800&q=80"
-            alt="Kimchi">
-
-            <div class="food-info">
-
-                <h3>Kimchi</h3>
-
-                <p>
-                    Traditional Korean fermented
-                    vegetables with seasoning.
-                </p>
-
-                <div class="price">₹149</div>
-
-                <button class="add-btn"
-                    onclick="addToCart('Kimchi',149)">
-                    Add to Cart
-                </button>
-
-            </div>
-
-        </div>
-
-
-        <!-- 8 -->
-
-        <div class="food-card" data-category="snacks">
-
-            <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=800&q=80"
-            alt="Korean Dumplings">
-
-            <div class="food-info">
-
-                <h3>Korean Dumplings</h3>
-
-                <p>
-                    Delicious Korean-style dumplings
-                    served with dipping sauce.
-                </p>
-
-                <div class="price">₹229</div>
-
-                <button class="add-btn"
-                    onclick="addToCart('Korean Dumplings',229)">
-                    Add to Cart
-                </button>
-
-            </div>
-
-        </div>
-
-
-        <!-- 9 -->
-
-        <div class="food-card" data-category="chicken">
-
-            <img src="https://images.unsplash.com/photo-1527477396000-e27163b481c2?auto=format&fit=crop&w=800&q=80"
-            alt="Spicy Chicken">
-
-            <div class="food-info">
-
-                <h3>Spicy Korean Chicken</h3>
-
-                <p>
-                    Tender chicken cooked with
-                    bold Korean spices.
-                </p>
-
-                <div class="price">₹329</div>
-
-                <button class="add-btn"
-                    onclick="addToCart('Spicy Korean Chicken',329)">
-                    Add to Cart
-                </button>
-
-            </div>
-
-        </div>
-
-
-        <!-- 10 -->
-
-        <div class="food-card" data-category="rice">
-
-            <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80"
-            alt="Korean Rice">
-
-            <div class="food-info">
-
-                <h3>Korean Rice Bowl</h3>
-
-                <p>
-                    Warm rice bowl with vegetables
-                    and Korean seasoning.
-                </p>
-
-                <div class="price">₹219</div>
-
-                <button class="add-btn"
-                    onclick="addToCart('Korean Rice Bowl',219)">
-                    Add to Cart
-                </button>
-
-            </div>
-
-        </div>
-
-
-        <!-- 11 -->
-
-        <div class="food-card" data-category="snacks">
-
-            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80"
-            alt="Korean Pancake">
-
-            <div class="food-info">
-
-                <h3>Korean Pancake</h3>
-
-                <p>
-                    Savoury Korean pancake with
-                    fresh vegetables.
-                </p>
-
-                <div class="price">₹189</div>
-
-                <button class="add-btn"
-                    onclick="addToCart('Korean Pancake',189)">
-                    Add to Cart
-                </button>
-
-            </div>
-
-        </div>
-
-
-        <!-- 12 -->
-
+        <!-- BANANA MILK -->
         <div class="food-card" data-category="drinks">
 
-            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&q=80"
-            alt="Korean Drink">
+            <img src="https://images.unsplash.com/photo-1553787499-6f7d3f7f5c5f?auto=format&fit=crop&w=800&q=80">
 
             <div class="food-info">
 
-                <h3>Korean Refreshing Drink</h3>
+                <h3>Korean Banana Milk</h3>
 
                 <p>
-                    A refreshing drink to enjoy
-                    with your Korean meal.
+                    Smooth and creamy banana-flavored
+                    Korean-style milk drink.
                 </p>
 
                 <div class="price">₹129</div>
 
                 <button class="add-btn"
-                    onclick="addToCart('Korean Refreshing Drink',129)">
+                onclick="addToCart('Korean Banana Milk',129)">
                     Add to Cart
                 </button>
 
@@ -930,10 +611,6 @@ footer p{
 
         </div>
 
-    </div>
-
-    <div class="no-results" id="noResults">
-        😕 No dishes found.
     </div>
 
 </section>
@@ -947,8 +624,7 @@ footer p{
 
         <h2>🛒 Your Cart</h2>
 
-        <button class="close-cart"
-            onclick="closeCart()">
+        <button class="close-cart" onclick="closeCart()">
             ×
         </button>
 
@@ -956,12 +632,11 @@ footer p{
 
     <div id="cartItems"></div>
 
-    <div class="cart-total">
-        Total: ₹<span id="cartTotal">0</span>
+    <div class="total">
+        Total: ₹<span id="total">0</span>
     </div>
 
-    <button class="checkout-btn"
-        onclick="showCheckout()">
+    <button class="checkout-btn" onclick="showCheckout()">
         Proceed to Checkout
     </button>
 
@@ -972,146 +647,351 @@ footer p{
 
 <section class="checkout" id="checkout">
 
-    <div class="checkout-box">
+    <form onsubmit="placeOrder(event)">
 
         <h2>🍱 Complete Your Order</h2>
 
-        <form onsubmit="placeOrder(event)">
+        <input
+            type="text"
+            id="customerName"
+            placeholder="Your Name"
+            required
+        >
 
-            <label>Your Name</label>
+        <input
+            type="tel"
+            id="phone"
+            placeholder="Phone Number"
+            required
+        >
 
-            <input
-                type="text"
-                id="customerName"
-                placeholder="Enter your name"
-                required
-            >
+        <textarea
+            id="address"
+            rows="4"
+            placeholder="Delivery Address"
+            required
+        ></textarea>
 
+        <select id="payment">
 
-            <label>Phone Number</label>
+            <option>Cash on Delivery</option>
+            <option>UPI</option>
+            <option>Pay at Restaurant</option>
 
-            <input
-                type="tel"
-                id="customerPhone"
-                placeholder="Enter your phone number"
-                required
-            >
+        </select>
 
+        <button class="place-order">
+            Place Order
+        </button>
 
-            <label>Delivery Address</label>
-
-            <textarea
-                id="customerAddress"
-                rows="4"
-                placeholder="Enter your complete delivery address"
-                required
-            ></textarea>
-
-
-            <label>Payment Method</label>
-
-            <select id="paymentMethod">
-
-                <option value="Cash on Delivery">
-                    Cash on Delivery
-                </option>
-
-                <option value="UPI">
-                    UPI
-                </option>
-
-                <option value="Pay at Restaurant">
-                    Pay at Restaurant
-                </option>
-
-            </select>
-
-
-            <button
-                type="submit"
-                class="place-order">
-                📱 Send Order on WhatsApp
-            </button>
-
-        </form>
-
-    </div>
+    </form>
 
 </section>
 
 
-<!-- ABOUT -->
+<footer id="about">
 
-<section class="about" id="about">
+    <h3>Seoul Bites 🇰🇷</h3>
 
-    <h2>🇰🇷 About Seoul Spice</h2>
+    <p>Authentic Korean food • Fresh ingredients • Great taste</p>
 
-    <p>
-        Seoul Spice Korean Kitchen brings the exciting
-        flavours of Korean cuisine to your table.
-        Explore our menu, choose your favourite dishes,
-        add them to your cart and place your order easily.
-    </p>
+    <br>
 
-</section>
-
-
-<!-- FOOTER -->
-
-<footer>
-
-    <h3>Seoul Spice Korean Kitchen 🇰🇷</h3>
-
-    <p>Authentic Korean Flavours • Fresh Food • Happy Customers</p>
-
-    <p>📱 Orders: +91 98885 55094</p>
-
-    <p>© 2026 Seoul Spice Korean Kitchen</p>
+    <p>© 2026 Seoul Bites. All Rights Reserved.</p>
 
 </footer>
 
 
 <script>
 
-
-// =============================
-// CART
-// =============================
-
 let cart = [];
 
-
 // ADD TO CART
+function addToCart(name, price) {
 
-function addToCart(name, price){
+    let existing = cart.find(item => item.name === name);
 
-    let existing =
-        cart.find(item => item.name === name);
-
-    if(existing){
-
+    if (existing) {
         existing.quantity++;
-
-    }else{
-
+    } else {
         cart.push({
-            name:name,
-            price:price,
-            quantity:1
+            name: name,
+            price: price,
+            quantity: 1
         });
-
     }
+
+    updateCart();
+    alert(name + " added to cart!");
+}
+
+
+// UPDATE CART
+function updateCart() {
+
+    let cartItems = document.getElementById("cartItems");
+
+    cartItems.innerHTML = "";
+
+    let total = 0;
+    let count = 0;
+
+    cart.forEach((item, index) => {
+
+        total += item.price * item.quantity;
+        count += item.quantity;
+
+        cartItems.innerHTML += `
+            <div class="cart-item">
+
+                <strong>${item.name}</strong>
+
+                ₹${item.price} × ${item.quantity}
+
+                <div class="qty">
+
+                    <button onclick="decrease(${index})">
+                        −
+                    </button>
+
+                    ${item.quantity}
+
+                    <button onclick="increase(${index})">
+                        +
+                    </button>
+
+                    <button onclick="removeItem(${index})">
+                        🗑
+                    </button>
+
+                </div>
+
+            </div>
+        `;
+    });
+
+    document.getElementById("total").innerText = total;
+    document.getElementById("cartCount").innerText = count;
+}
+
+
+// INCREASE
+function increase(index) {
+
+    cart[index].quantity++;
+
+    updateCart();
+}
+
+
+// DECREASE
+function decrease(index) {
+
+    if (cart[index].quantity > 1) {
+        cart[index].quantity--;
+    } else {
+        cart.splice(index, 1);
+    }
+
+    updateCart();
+}
+
+
+// REMOVE
+function removeItem(index) {
+
+    cart.splice(index, 1);
+
+    updateCart();
+}
+
+
+// OPEN CART
+function openCart() {
+
+    document.getElementById("cart")
+        .classList.add("active");
+}
+
+
+// CLOSE CART
+function closeCart() {
+
+    document.getElementById("cart")
+        .classList.remove("active");
+}
+
+
+// SEARCH
+function searchFood() {
+
+    let search =
+        document.getElementById("search")
+        .value
+        .toLowerCase();
+
+    let cards =
+        document.querySelectorAll(".food-card");
+
+    cards.forEach(card => {
+
+        let name =
+            card.querySelector("h3")
+            .innerText
+            .toLowerCase();
+
+        if (name.includes(search)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+
+    });
+}
+
+
+// FILTER
+function filterFood(category) {
+
+    let cards =
+        document.querySelectorAll(".food-card");
+
+    cards.forEach(card => {
+
+        if (
+            category === "all" ||
+            card.dataset.category === category
+        ) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+
+    });
+}
+
+
+// CHECKOUT
+function showCheckout() {
+
+    if (cart.length === 0) {
+
+        alert("Your cart is empty!");
+
+        return;
+    }
+
+    closeCart();
+
+    document.getElementById("checkout")
+        .classList.add("active");
+
+    document.getElementById("checkout")
+        .scrollIntoView({
+            behavior: "smooth"
+        });
+}
+
+
+// SEND ORDER TO WHATSAPP
+function placeOrder(event) {
+
+    event.preventDefault();
+
+    if (cart.length === 0) {
+
+        alert("Your cart is empty!");
+
+        return;
+    }
+
+    let name =
+        document.getElementById("customerName").value;
+
+    let phone =
+        document.getElementById("phone").value;
+
+    let address =
+        document.getElementById("address").value;
+
+    let payment =
+        document.getElementById("payment").value;
+
+
+    // CALCULATE TOTAL
+
+    let total = 0;
+
+    cart.forEach(item => {
+
+        total += item.price * item.quantity;
+
+    });
+
+
+    // CREATE ORDER MESSAGE
+
+    let message =
+        "🍜 *NEW ORDER - SEOUL BITES* 🇰🇷\n\n" +
+
+        "👤 *Customer Details*\n" +
+        "Name: " + name + "\n" +
+        "Phone: " + phone + "\n" +
+        "Address: " + address + "\n\n" +
+
+        "🛒 *ORDER DETAILS*\n";
+
+
+    cart.forEach(item => {
+
+        message +=
+            "• " +
+            item.name +
+            " × " +
+            item.quantity +
+            " = ₹" +
+            (item.price * item.quantity) +
+            "\n";
+
+    });
+
+
+    message +=
+        "\n💰 *TOTAL: ₹" + total + "*\n" +
+        "💳 Payment: " + payment + "\n\n" +
+        "🙏 Thank you for ordering!";
+
+
+    // WHATSAPP RESTAURANT NUMBER
+    let restaurantNumber = "919888555094";
+
+
+    // CREATE WHATSAPP LINK
+
+    let whatsappURL =
+        "https://wa.me/" +
+        restaurantNumber +
+        "?text=" +
+        encodeURIComponent(message);
+
+
+    // OPEN WHATSAPP
+
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
+
+
+    // CLEAR CART
+
+    cart = [];
 
     updateCart();
 
 }
 
+</script>
 
-// UPDATE CART
-
-function updateCart(){
-
-    let cartItems =
-        document.getElementById("cartItems");
-
-    cartItems.inne
+</body>
+</html>
